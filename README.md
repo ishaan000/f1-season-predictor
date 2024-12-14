@@ -78,6 +78,24 @@ The app will be running on http://127.0.0.1:8000.
 
 For detailed documentation and usage, please refer to the API documentation at `/docs` on the local server.
 
+## Driver Name Format
+
+When making requests to the endpoints that require specifying a driver (e.g., for performance data, trends, etc.), you should use the driver's **abbreviation** as the driver name.
+
+### Example of Driver Abbreviations:
+- **VER** - Max Verstappen
+- **HAM** - Lewis Hamilton
+- **SAI** - Carlos Sainz
+- **LEC** - Charles Leclerc
+- **ALO** - Fernando Alonso
+- **PER** - Sergio Perez
+
+These abbreviations can be used to query specific data for each driver. For example:
+- To get Max Verstappen's performance for the Monaco GP in 2023, use **`/prediction/driver-performance/2023/Monaco/VER`**
+- To get the trends for Lewis Hamilton in 2023, use **`/prediction/driver-trends/2023/HAM`**
+
+You can find the full list of driver abbreviations on the official F1 website or other resources that provide current driver lists.
+
 ## Tests
 
 To run the tests for this app, follow these steps:

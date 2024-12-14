@@ -1,0 +1,12 @@
+# Ignore Python virtual environments
+venv/
+
+# Ignore cache files created by FastF1
+cache/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore environment variables files
+.env

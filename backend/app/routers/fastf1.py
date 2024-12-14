@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from app.services.f1_data import load_race_data, load_driver_performance, load_race_results, load_driver_standings, load_historical_data, load_qualifying_results, load_weather_data, load_driver_trends
 
-router = APIRouter(prefix="/prediction", tags=["Prediction"])
+router = APIRouter(prefix="/fastf1", tags=["FastF1"])
 
 @router.get("/historical-data/{year}")
 async def get_historical_data(year: int, driver: str = None):

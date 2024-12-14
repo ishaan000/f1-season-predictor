@@ -46,27 +46,35 @@ The app will be running on http://127.0.0.1:8000.
 
 ### 1. **Historical Data**
    - Fetch historical data for a specific year, optionally filtered by driver.
+   - Endpoint: `/prediction/historical-data/{year}`
 
 ### 2. **Driver Standings**
    - Retrieve the driver standings for a specific season.
+   - Endpoint: `/prediction/standings/{year}`
 
 ### 3. **Race Prediction**
    - Fetch race data for a specific year and grand prix (e.g., Monaco 2023).
-
+   - Endpoint: `/prediction/{year}/{grand_prix}`
+    
 ### 4. **Driver Performance**
    - Fetch performance data for a specific driver in a specific race.
+   - Endpoint: `/prediction/driver-performance/{year}/{grand_prix}/{driver}`
 
 ### 5. **Race Results**
    - Fetch race results for all drivers in a specific race.
+   - Endpoint: `/prediction/race-results/{year}/{grand_prix}`
 
 ### 6. **Qualifying Results**
    - Retrieve qualifying results for a specific race.
+   - Endpoint: `/prediction/qualifying-results/{year}/{grand_prix}`
 
 ### 7. **Weather Data**
    - Fetch weather data for a specific race.
+   - Endpoint: `/prediction/weather/{year}/{grand_prix}`
 
 ### 8. **Driver Trends**
    - Fetch performance trends for a specific driver over a given year.
+   - Endpoint: `/prediction/driver-trends/{year}/{driver}`
 
 For detailed documentation and usage, please refer to the API documentation at `/docs` on the local server.
 

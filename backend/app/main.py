@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routers import fastf1
+from app.routers import fastf1, jolpicaf1
 
 app = FastAPI(
     title="F1 Season Predictor API",
@@ -9,6 +9,8 @@ app = FastAPI(
 
 # Include API routes
 app.include_router(fastf1.router)
+app.include_router(jolpicaf1.router)
+
 
 @app.get("/")
 async def root():
